@@ -1,7 +1,8 @@
 //Conexion con la Base de Datos.
 import Sequelize from 'sequelize'
 
-const sequelize = new Sequelize('bdproyecto', 'root', '', {
+
+const sequelize = new Sequelize('nombreBD', 'usuarioServerBD', 'contraseñaServerBD', {//Modifica los datos para conectarte a la Bd
     host: 'localhost',
     dialect: 'mysql'
 })
